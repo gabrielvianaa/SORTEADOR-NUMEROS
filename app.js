@@ -6,6 +6,12 @@ function sortear(){
     let sorteados = [];
     let numero; 
 
+    if(de >= ate){
+        alert('ERRO: O número mínimo está maior que o máximo');
+        reiniciar();
+        exit();
+    }
+
     //Garante que o código gere números aleatórios de acordo com a quantidade selecionada pelo usuário.
     for(let i = 1; i <= quantidade; i++){
         numero = obterNumeroAleatorio(de, ate);
